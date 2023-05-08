@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/search_page">
+
+    <fragment
+        android:id="@+id/search_page"
+        android:name="com.example.albertsonescodechallenge.presentationLayer.ui.SearchPage"
+        tools:layout="@layout/fragment_search_page"
+        android:label="Acronym Finder">
+
+        <action
+            android:id="@+id/action_search_page_to_details_page"
+            app:destination="@id/details_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/details_page"
+        android:name="com.example.albertsonescodechallenge.presentationLayer.ui.DetailsFragment"
+        tools:layout="@layout/fragment_details"
+        android:label="Acronym Details">
+
+    </fragment>
+
+</navigation>
